@@ -9,15 +9,15 @@ const routes: Routes = [
   },
   {
     path: 'recipe',
-    loadChildren: () => import('./pages/recipe/recipe.module').then(m => m.RecipeModule)
+    loadChildren: () => import('@pages/recipe/recipe.module').then(m => m.RecipeModule)
   },
   {
     path: 'list',
-    loadChildren: () => import('./pages/shopping-list/shopping-list.module').then(m => m.ShoppingListModule)
+    loadChildren: () => import('@pages/shopping-list/shopping-list.module').then(m => m.ShoppingListModule)
   },
   {
     path: 'ingredient',
-    loadChildren: () => import('./pages/ingredient/ingredient.module').then(m => m.IngredientModule)
+    loadChildren: () => import('@pages/ingredient/ingredient.module').then(m => m.IngredientModule)
   },
 ];
 @NgModule({

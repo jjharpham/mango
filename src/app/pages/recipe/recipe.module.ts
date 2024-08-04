@@ -1,9 +1,9 @@
-import { IonicModule } from '@ionic/angular';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RecipePage } from './recipe.page';
 import { RouterModule, Routes } from '@angular/router';
+import { IonicModule } from '@ionic/angular';
+import { RecipePage } from './recipe.page';
 
 const routes: Routes = [
   {

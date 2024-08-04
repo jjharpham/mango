@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from '@models';
 
 @Component({
   selector: 'mango-recipe',
@@ -17,6 +18,20 @@ export class RecipePage {
     'Madrid',
     'New York',
     'Panama City',
+  ];
+
+  public egg = true;
+
+  public recipes: Recipe[] = [
+    {
+      id: 'omlette',
+      name: 'Omlette',
+      ingredients: {
+        "egg": 1,
+      },
+      tags: [],
+    }
+
   ];
 
 }

@@ -4,8 +4,8 @@
   "author": "jjharpham",
   "scripts": {
     "start": "ionic serve",
-    "build": "ionic capacitor build android",
-    "lint": "ng lint"
+    "build": "ionic capacitor build android --prod",
+    "lint": "ng lint --fix"
   },
   "private": true,
   "dependencies": {
