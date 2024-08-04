@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { IonModal, ModalController, SearchbarCustomEvent, SearchbarInputEventDetail } from '@ionic/angular';
+import { Component, OnInit } from '@angular/core';
+import { ModalController, SearchbarCustomEvent, ToastController } from '@ionic/angular';
 import { Recipe } from '@models';
 import { RecipeService } from '@services';
 import { BehaviorSubject, combineLatest, map, Observable } from 'rxjs';
@@ -11,8 +11,6 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 })
 export class RecipePage implements OnInit {
 
-  @ViewChild(IonModal) public modal!: IonModal;
-
   public recipes$!: Observable<Recipe[]>;
 
   private search$: BehaviorSubject<string> = new BehaviorSubject('');
@@ -20,6 +18,7 @@ export class RecipePage implements OnInit {
   public constructor(
     private modalController: ModalController,
     private recipeService: RecipeService,
+    private toastController: ToastController,
   ) {}
 
   public ngOnInit(): void {
@@ -35,11 +34,7 @@ export class RecipePage implements OnInit {
     this.search$.next(event.target.value?.toLocaleLowerCase() ?? '');
   }
 
-  public close(): void {
-    this.modal.dismiss();
-  }
-
-  async openModal(recipe: Recipe): Promise<void> {
+  public async openDetail(recipe: Recipe): Promise<void> {
     const modal = await this.modalController.create({
       component: RecipeDetailComponent,
       componentProps: { recipe },
@@ -49,4 +44,16 @@ export class RecipePage implements OnInit {
 
     await modal.onWillDismiss();
   }
+
+  public async add(recipe: Recipe, event: Event): Promise<void> {
+    event.stopPropagation();
+
+    const toast = await this.toastController.create({
+      message: `Added ${recipe.name} to list`,
+      duration: 1500,
+      position: 'bottom',
+    });
+
+    await toast.present();
+  };
 }

@@ -9,8 +9,9 @@
   @if (recipes$ | async; as recipes) {
     <ion-list  [inset]="true">
       @for (recipe of recipes; track recipe) {
-        <ion-item button (click)="openModal(recipe)">
+        <ion-item button (click)="openDetail(recipe)">
           <ion-label>{{ recipe.name }}</ion-label>
+          <ion-icon name="add-outline" slot="end" (click)="add(recipe, $event)"></ion-icon>
         </ion-item>
       }
     </ion-list>
