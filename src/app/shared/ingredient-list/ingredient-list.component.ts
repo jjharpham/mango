@@ -1,14 +1,11 @@
-import { CommonModule, KeyValue } from '@angular/common';
+import { KeyValue } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
 import { IngredientService } from '@services';
 import { map, Observable } from 'rxjs';
 
 @Component({
   selector: 'mango-ingredient-list',
   templateUrl: 'ingredient-list.component.html',
-  standalone: true,
-  imports: [CommonModule, IonicModule]
 })
 export class IngredientListComponent {
 

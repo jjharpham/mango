@@ -28,7 +28,7 @@
     "paths": {
       "@assets/*": ["./src/assets/*"],
       "@models": ["./src/app/models"],
-      "@pages/*": ["./src/app/pages/*"],
+      "@pages": ["./src/app/pages"],
       "@services": ["./src/app/services"],
     }
   },

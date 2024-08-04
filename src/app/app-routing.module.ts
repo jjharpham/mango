@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { IngredientPage, RecipePage, ShoppingListPage } from '@pages';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/list',
+    redirectTo: 'list',
     pathMatch: 'full',
   },
   {
     path: 'recipe',
-    loadChildren: () => import('@pages/recipe/recipe.module').then(m => m.RecipeModule)
+    component: RecipePage,
   },
   {
     path: 'list',
-    loadChildren: () => import('@pages/shopping-list/shopping-list.module').then(m => m.ShoppingListModule)
+    component: ShoppingListPage,
   },
   {
     path: 'ingredient',
-    loadChildren: () => import('@pages/ingredient/ingredient.module').then(m => m.IngredientModule)
+    component: IngredientPage,
   },
 ];
 @NgModule({
