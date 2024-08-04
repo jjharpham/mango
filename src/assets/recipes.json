@@ -51,5 +51,23 @@
       "curry-powder": 15
     },
     "tags": []
+  },
+  {
+    "id": "sunshine-burgers",
+    "name": "Sunshine Burgers",
+    "ingredients": {
+      "chicken-breast": 2,
+      "salad": 0.5,
+      "brioche-bun": 2,
+      "garlic": 1,
+      "ginger-paste": 15,
+      "paprika": 10,
+      "turmeric": 5,
+      "lime": 1,
+      "mayonnaise": 30,
+      "chilli": 1,
+      "creamed-coconut": 25,
+      "sweet-potato": 1
+    }
   }
 ]

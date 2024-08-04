@@ -101,5 +101,42 @@
     "id": "turmeric",
     "name": "Turmeric",
     "unit": "ml"
+  },
+  {
+    "id": "salad",
+    "name": "Salad",
+    "unit": " bag",
+    "pluralUnit": " bags"
+  },
+  {
+    "id": "brioche-bun",
+    "name": "Brioche Buns"
+  },
+  {
+    "id": "ginger-paste",
+    "name": "Ginger Paste",
+    "unit": "g"
+  },
+  {
+    "id": "lime",
+    "name": "Lime"
+  },
+  {
+    "id": "mayonnaise",
+    "name": "Mayonnaise",
+    "unit": "g"
+  },
+  {
+    "id": "chilli",
+    "name": "Chilli"
+  },
+  {
+    "id": "creamed-coconut",
+    "name": "Creamed Coconut",
+    "unit": "g"
+  },
+  {
+    "id": "sweet-potato",
+    "name": "Sweet Potato"
   }
 ]
