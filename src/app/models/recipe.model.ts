@@ -7,8 +7,8 @@ export class Recipe {
   public constructor(
     recipe: Partial<Recipe>,
   ) {
-    this.id = recipe.id!
-    this.name = recipe.name!
+    this.id = recipe.id!;
+    this.name = recipe.name!;
     this.ingredients = recipe.ingredients ?? {};
     this.tags = recipe.tags ?? [];
   }

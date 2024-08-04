@@ -1,15 +1,53 @@
 [
   {
     "id": "tandoori-chicken",
-    "name": "Tandoori Chicken, Mint Raita and Kachumber Salad",
+    "name": "Tandoori Chicken and Kachumber Salad",
     "ingredients": {
       "onion": 1,
-      "tomato": 2,
+      "big-tomato": 2,
       "cucumber": 0.5,
       "yoghurt": 80,
       "rice": 1,
       "chicken-breast": 2,
       "mint-sauce": 20,
+      "curry-powder": 15
+    },
+    "tags": []
+  },
+  {
+    "id": "chicken-bhuna",
+    "name": "Chicken Bhuna with Naan",
+    "ingredients": {
+      "onion": 1,
+      "garlic": 1,
+      "cherry-tomato": 250,
+      "tomato-paste": 16,
+      "rice": 1,
+      "chicken-breast": 2,
+      "chicken-stock": 1,
+      "naan": 2,
+      "fenugreek": 2.5,
+      "garam-masala": 15,
+      "paprika": 5
+    },
+    "tags": []
+  },
+  {
+    "id": "oven-baked-biryani",
+    "name": "Oven-Baked Biryani",
+    "ingredients": {
+      "big-tomato": 2,
+      "garlic": 1,
+      "chicken-breast": 2,
+      "bay-leaf": 1,
+      "cardamom": 3,
+      "crispy-onions": 15,
+      "yoghurt": 80,
+      "rice": 1,
+      "ginger": 15,
+      "carrot": 2,
+      "turmeric": 2.5,
+      "chicken-stock": 1,
       "curry-powder": 15
     },
     "tags": []

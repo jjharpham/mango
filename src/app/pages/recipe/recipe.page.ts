@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IonModal, SearchbarCustomEvent, SearchbarInputEventDetail } from '@ionic/angular';
+import { IonModal, ModalController, SearchbarCustomEvent, SearchbarInputEventDetail } from '@ionic/angular';
 import { Recipe } from '@models';
 import { RecipeService } from '@services';
 import { BehaviorSubject, combineLatest, map, Observable } from 'rxjs';
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 
 @Component({
   selector: 'mango-recipe',
@@ -17,6 +18,7 @@ export class RecipePage implements OnInit {
   private search$: BehaviorSubject<string> = new BehaviorSubject('');
 
   public constructor(
+    private modalController: ModalController,
     private recipeService: RecipeService,
   ) {}
 
@@ -35,5 +37,16 @@ export class RecipePage implements OnInit {
 
   public close(): void {
     this.modal.dismiss();
+  }
+
+  async openModal(recipe: Recipe): Promise<void> {
+    const modal = await this.modalController.create({
+      component: RecipeDetailComponent,
+      componentProps: { recipe },
+    });
+
+    modal.present();
+
+    await modal.onWillDismiss();
   }
 }

@@ -4,8 +4,8 @@
     "name": "Onion"
   },
   {
-    "id": "tomato",
-    "name": "Tomato"
+    "id": "big-tomato",
+    "name": "Big Tomato"
   },
   {
     "id": "cucumber",
@@ -34,6 +34,72 @@
   {
     "id": "curry-powder",
     "name": "Curry Powder",
+    "unit": "ml"
+  },
+  {
+    "id": "garlic",
+    "name": "Garlic Clove"
+  },
+  {
+    "id": "cherry-tomato",
+    "name": "Cherry Tomatoes",
+    "unit": "g"
+  },
+  {
+    "id": "tomato-paste",
+    "name": "Tomato Paste",
+    "unit": "g"
+  },
+  {
+    "id": "chicken-stock",
+    "name": "Chicken Stock",
+    "unit": " pot",
+    "pluralUnit": " pots"
+  },
+  {
+    "id": "naan",
+    "name": "Naan"
+  },
+  {
+    "id": "fenugreek",
+    "name": "Ground Fenugreek",
+    "unit": "ml"
+  },
+  {
+    "id": "garam-masala",
+    "name": "Garam Masala",
+    "unit": "ml"
+  },
+  {
+    "id": "paprika",
+    "name": "Paprika",
+    "unit": "ml"
+  },
+  {
+    "id": "bay-leaf",
+    "name": "Bay Leaves"
+  },
+  {
+    "id": "cardamom",
+    "name": "Cardamom Pods"
+  },
+  {
+    "id": "crispy-onions",
+    "name": "Crispy Onions",
+    "unit": "g"
+  },
+  {
+    "id": "ginger",
+    "name": "Ginger",
+    "unit": "g"
+  },
+  {
+    "id": "carrot",
+    "name": "Carrot"
+  },
+  {
+    "id": "turmeric",
+    "name": "Turmeric",
     "unit": "ml"
   }
 ]

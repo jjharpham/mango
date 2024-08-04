@@ -1,0 +1,17 @@
+<ion-list [inset]="true">
+  @for (ingredient of ingredients$ | async ; track ingredient) {
+    <ion-item>
+      <ion-label>{{ ingredient.key }}</ion-label>
+      <ion-label slot="end"><p>{{ ingredient.value }}</p></ion-label>
+    </ion-item>
+  }
+</ion-list>
+
+@if (missing$ | async; as missing) {
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-label>Missing</ion-label>
+      <ion-label slot="end"><p>{{ missing }}</p></ion-label>
+    </ion-item>
+  </ion-list>
+}

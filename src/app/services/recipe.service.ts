@@ -9,7 +9,7 @@ import { Observable, of } from 'rxjs';
 export class RecipeService {
 
   public get$(): Observable<Recipe[]> {
-    return of(recipes.map(x => new Recipe(x)));
+    return of(recipes.map(x => new Recipe(x as unknown as Partial<Recipe>)));
   }
 
 }

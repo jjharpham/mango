@@ -1,39 +1,16 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-searchbar placeholder="Search Recipes" (ionInput)="handleInput($event)"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="light">
 
   @if (recipes$ | async; as recipes) {
-    <ion-list>
+    <ion-list  [inset]="true">
       @for (recipe of recipes; track recipe) {
-        <ion-item>
+        <ion-item button (click)="openModal(recipe)">
           <ion-label>{{ recipe.name }}</ion-label>
-          <ion-button id="open-ingredients">Ingredients</ion-button>
-          <ion-modal trigger="open-ingredients">
-            <ng-template>
-              <ion-header>
-                <ion-toolbar>
-                  <ion-title>Ingredients</ion-title>
-                  <ion-buttons slot="end">
-                    <ion-button (click)="close()"><ion-icon name="close"></ion-icon></ion-button>
-                  </ion-buttons>
-                </ion-toolbar>
-              </ion-header>
-              <ion-content class="ion-padding">
-                <ion-list>
-                  @for (ingredient of recipe.ingredients | keyvalue; track ingredient) {
-                    <ion-item>
-                      <ion-label>{{ ingredient.key }}</ion-label>
-                      <ion-badge>{{ ingredient.value }}</ion-badge>
-                    </ion-item>
-                  }
-                </ion-list>
-              </ion-content>
-            </ng-template>
-          </ion-modal>
         </ion-item>
       }
     </ion-list>

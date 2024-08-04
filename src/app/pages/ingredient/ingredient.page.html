@@ -1,15 +1,13 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ingredients
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Ingredients</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="light">
 
   @if (ingredients$ | async; as ingredients) {
-    <ion-list>
+    <ion-list [inset]="true">
       @for (ingredient of ingredients; track ingredient) {
         <ion-item>
           <ion-label>{{ ingredient.name }}</ion-label>

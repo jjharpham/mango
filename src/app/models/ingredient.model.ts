@@ -22,6 +22,6 @@ export class Ingredient {
       ? this.pluralUnit
       : this.unit;
 
-    return `${this.name}${suffix}`;
+    return `${quantity}${suffix}`;
   }
 }
