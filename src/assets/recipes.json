@@ -1,0 +1,17 @@
+[
+  {
+    "id": "tandoori-chicken",
+    "name": "Tandoori Chicken, Mint Raita and Kachumber Salad",
+    "ingredients": {
+      "onion": 1,
+      "tomato": 2,
+      "cucumber": 0.5,
+      "yoghurt": 80,
+      "rice": 1,
+      "chicken-breast": 2,
+      "mint-sauce": 20,
+      "curry-powder": 15
+    },
+    "tags": []
+  }
+]

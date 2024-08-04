@@ -1,0 +1,39 @@
+[
+  {
+    "id": "onion",
+    "name": "Onion"
+  },
+  {
+    "id": "tomato",
+    "name": "Tomato"
+  },
+  {
+    "id": "cucumber",
+    "name": "Cucumber"
+  },
+  {
+    "id": "yoghurt",
+    "name": "Natural Yogurt",
+    "unit": "g"
+  },
+  {
+    "id": "rice",
+    "name": "Rice",
+    "unit": " cup",
+    "pluralUnit": " cups"
+  },
+  {
+    "id": "chicken-breast",
+    "name": "Chicken Breast"
+  },
+  {
+    "id": "mint-sauce",
+    "name": "Mint Sauce",
+    "unit": "g"
+  },
+  {
+    "id": "curry-powder",
+    "name": "Curry Powder",
+    "unit": "ml"
+  }
+]

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Ingredient } from '@models';
+import { IngredientService } from '@services';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'mango-ingredient',
@@ -6,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class IngredientPage {
 
-  constructor() {}
+  public ingredients$: Observable<Ingredient[]> = this.ingredientService.get$();
+
+  public constructor(
+    private ingredientService: IngredientService,
+  ) {}
 
 }

@@ -23,9 +23,13 @@
       "dom"
     ],
     "useDefineForClassFields": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "paths": {
+      "@assets/*": ["./src/assets/*"],
       "@models": ["./src/app/models"],
-      "@pages/*": ["./src/app/pages/*"]
+      "@pages/*": ["./src/app/pages/*"],
+      "@services": ["./src/app/services"],
     }
   },
   "angularCompilerOptions": {
